@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ blog.title }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ blog.description }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ blog.author }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="list-group-item" *ngFor="let comment of blog.comments">
+      <h1>{{ comment.name }}</h1>
+    </div>
+  </div>
+</div>
+<hr />
+<button type="button" class="btn btn-primary me-3" (click)="onEditBlog()">
+  Edit
+</button>
+<button type="button" class="btn btn-danger" (click)="onDeleteBlog()">
+  Delete
+</button>
