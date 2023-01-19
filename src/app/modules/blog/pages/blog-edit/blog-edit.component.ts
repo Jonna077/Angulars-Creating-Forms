@@ -71,7 +71,7 @@ export class BlogEditComponent implements OnInit {
     let blogComments = new FormArray([
       new FormGroup({
         name: new FormControl({
-          value: 'This is a sample comment',
+          value: 'Leave a Comment',
           disabled: true,
         }),
       }),

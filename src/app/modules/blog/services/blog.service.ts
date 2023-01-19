@@ -11,30 +11,29 @@ export class BlogService {
 
   private blogs: Blog[] = [
     new Blog(
-      1,
-      'How to cook an egg',
-      'This is blog on how to cook an egg',
-      'Daisy Taichou',
-      [new Comment('That was so easy!'), new Comment('I love eggs!')]
+      1101,
+      'Noli Me Tangere',
+      'Filipino Novel',
+      'Dr. Jose Rizal',
+      [new Comment('Great Story'), new Comment('Nice Novel')]
     ),
 
     new Blog(
-      2,
-      'How to cook an adobo',
-      'This is blog on how to cook an egg',
-      'Euphytaichou',
+      1102,
+      'The Great Gatsby',
+      'English Novel',
+      'F. Scott Fitzgerald',
       [
-        new Comment('That is the Filipino food!'),
-        new Comment('Adobe is the best!'),
+        new Comment('uUtimately unattainable'),
+        new Comment('Great Love Story'),
       ]
     ),
   ];
 
-  constructor() {}
+  constructor() { }
 
   getBlogs() {
     return this.blogs.slice();
-    // return this.https.get('http://localhost:3000/books');
   }
 
   getBlog(index: number) {

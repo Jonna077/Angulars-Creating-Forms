@@ -1,14 +1,9 @@
+
+<h3 style="text-align: center;">Blog Form </h3><br>
 <div class="row">
   <div class="col-xs-12">
     <form [formGroup]="blogForm" (ngSubmit)="onSubmit()">
-      <div class="row">
-        <div class="col-xs-12">
-          <button type="submit" class="btn btn-success me-3">Save</button>
-          <button type="button" class="btn btn-danger" (click)="onCancel()">
-            Cancel
-          </button>
-        </div>
-      </div>
+      
       <div class="row" style="margin-top: 10px">
         <div class="col-xs-12">
           <div class="form-group">
@@ -61,13 +56,11 @@
 
       <hr />
       <div class="row">
-        <div class="col-xs-12">
-          <button
-            type="button"
-            class="btn btn-success"
-            (click)="onAddComment()"
-          >
-            Add Comment
+        <div class="col-xs-12" style="text-align: center;">
+          <button type="button"  class="btn btn-warning" (click)="onAddComment()" > Add Comment </button> &nbsp;
+          <button type="submit" class="btn btn-success me-3"><i class="fa fa-save"></i> Save</button> 
+          <button type="button" class="btn btn-danger" (click)="onCancel()"> <i class="fa fa-close"></i>
+            Cancel
           </button>
         </div>
       </div>

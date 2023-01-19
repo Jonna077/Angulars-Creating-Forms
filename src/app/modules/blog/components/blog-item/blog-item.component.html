@@ -1,15 +1,11 @@
-<a
-  [routerLink]="[index]"
-  routerLinkActive="active"
-  class="list-group-item clearfix"
->
-  <div class="pull-left">
-    <p class="list-group-item-text">{{ blog.id }}</p>
-    <p class="list-group-item-text">{{ blog.title }}</p>
-    <p class="list-group-item-text">{{ blog.description }}</p>
-    <p class="list-group-item-text">isbn: {{ blog.author }}</p>
+<a [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix">
+  <div class="pull-center">
+    <p class="list-group-item-text">Blog Id: {{ blog.id }}</p>
+    <p class="list-group-item-text">Blog Title: {{ blog.title }}</p>
+    <p class="list-group-item-text">Blog Description: {{ blog.description }}</p>
+    <p class="list-group-item-text">Isbn: {{ blog.author }}</p>
     <p class="list-group-item-text" *ngFor="let comment of blog.comments">
-      {{ comment.name }}
+      Blog Comment: {{ comment.name }}
     </p>
   </div>
 </a>

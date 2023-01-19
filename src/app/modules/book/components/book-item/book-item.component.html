@@ -1,10 +1,6 @@
-<a
-  [routerLink]="[index]"
-  routerLinkActive="active"
-  class="list-group-item clearfix"
->
+<a [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix">
   <div class="pull-center">
-   
+
     <p class="list-group-item-text">Book Id: {{ book.id }}</p>
     <p class="list-group-item-text"> Title: {{ book.name }}</p>
     <p class="list-group-item-text" *ngFor="let author of book.authors"> Authors:
