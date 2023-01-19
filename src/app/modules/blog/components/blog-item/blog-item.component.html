@@ -3,7 +3,7 @@
     <p class="list-group-item-text">Blog Id: {{ blog.id }}</p>
     <p class="list-group-item-text">Blog Title: {{ blog.title }}</p>
     <p class="list-group-item-text">Blog Description: {{ blog.description }}</p>
-    <p class="list-group-item-text">Isbn: {{ blog.author }}</p>
+    <p class="list-group-item-text">Author: {{ blog.author }}</p>
     <p class="list-group-item-text" *ngFor="let comment of blog.comments">
       Blog Comment: {{ comment.name }}
     </p>
